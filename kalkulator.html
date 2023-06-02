@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="normalize.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
+    <title>kalkulator walutowy</title>
+</head>
+<body>
+    <div class="calculator">
+		<h1 class="calculator__title">Kalkulator walut</h1>
+		<label class="calculator__label">PLN:</label>
+		<input type="number" class="calculator__input calculator__input--js" placeholder="Kwota" step="0.01" min="0.01" autofocus>
+		<label class="calculator__label">Waluta docelowa:</label>
+		<select class="5 calculator__select--js">
+			<option value="EUR">Euro</option>
+			<option value="USD">Dolary</option>
+			<option value="GBP">Funty</option>
+			<option value="CHF">Franki</option>
+		</select>
+		<button onclick="convertCurrency()" class="calculator__button">Przelicz</button>
+		<div class="calculator__result"></div>
+	</div>
+
+</body>
+</html>
